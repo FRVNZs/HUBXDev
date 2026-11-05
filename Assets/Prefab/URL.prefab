@@ -337,8 +337,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04e5f38954cccb44d986c89616a17367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIGradient
-  color1: {r: 0.8509804, g: 0.41960785, b: 0.15294118, a: 1}
-  color2: {r: 0.4716981, g: 0.26351035, b: 0.07386967, a: 0.5019608}
+  color1: {r: 0.03529412, g: 0.08235294, b: 0.17254902, a: 1}
+  color2: {r: 0.115594566, g: 0.06385724, b: 0.3301887, a: 0.5019608}
   angle: 5
   offset: 0.5
   softness: 0.5
@@ -448,8 +448,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04e5f38954cccb44d986c89616a17367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIGradient
-  color1: {r: 0.8509804, g: 0.41960785, b: 0.15294118, a: 1}
-  color2: {r: 0.3433962, g: 0.09793208, b: 0.009718701, a: 1}
+  color1: {r: 0.8113208, g: 0.56772673, b: 0.41714135, a: 1}
+  color2: {r: 0.28803667, g: 0.025453899, b: 0.49056602, a: 1}
   angle: 0
   offset: 0.5
   softness: 0.5
