@@ -1,0 +1,70 @@
+# ============================================================
+#  GitBankDevel — .gitignore для исходников Unity-проекта
+#  Правило по умолчанию: в Assets коммитится ВСЁ, включая *.meta.
+#  НИКОГДА не добавляй сюда голое "*.meta" — это обнулит ссылки
+#  на префабы/скрипты/текстуры у каждого, кто склонировал репо.
+# ============================================================
+
+# ---------- Кэш и генерация Unity (восстанавливаются при открытии) ----------
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# ---------- Тестовая база данных РЕДАКТОРА ----------
+# В дев-проекте GetDatabaseRootPath() под UNITY_EDITOR пишет в
+# GitBankDevel/ProjectBank (песочница для Play Mode). Релизные
+# данные — в отдельном репо GitBank/ProjectBank, сюда им делать нечего.
+/ProjectBank/
+/Test_Database_Local/      # страховка от артефактов старых версий кода
+
+# ---------- Случайные выходы сборки внутри дев-папки (релиз живёт ВНЕ репо) ----------
+/GitBank_Build/
+/Release*/
+
+# ---------- Файлы IDE / редакторов ----------
+.vs/
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.booproj
+*.svd
+*.pidb
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.tmp
+
+# Мета-файлы для сгенерированных отладочных символов (в Assets не появляются,
+# но на всякий случай, как в официальном шаблоне Unity)
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# ---------- Системный мусор ОС ----------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.Spotlight-V100
+.Trashes
+
+# ---------- Прочие артефакты Unity ----------
+sysinfo.txt
+crash-reports/
+*.stackdump
+
+# ---------- Пакеты: коммитим манифесты, игнорим кэш ----------
+# Packages/manifest.json и packages-lock.json ОБЯЗАТЕЛЬНЫ в репо —
+# по ним у коллеги восстановятся те же версии пакетов, что у тебя.
+/[Pp]ackages/[Pp]ackage[Cc]ache/
+/[Pp]ackages/[Dd]ownload[Cc]ache/
